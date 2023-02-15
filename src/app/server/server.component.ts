@@ -9,6 +9,7 @@ import { Component } from "@angular/core";
 export class ServerComponent {
     serverId: number = 10;
     private serverStatus: string = 'offline';
+    buttonDescription: string = 'Turn on';
 
     getServerStatus(): string {
         return this.serverStatus;
@@ -17,8 +18,10 @@ export class ServerComponent {
     changeStatus() {
         if(this.serverStatus === 'offline') {
             this.serverStatus = 'online';
+            this.buttonDescription = 'Turn off'
         }else {
             this.serverStatus = 'offline';
+            this.buttonDescription = 'Turn on'
         }
     }
 }
