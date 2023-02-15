@@ -8,5 +8,17 @@ import { Component } from "@angular/core";
 
 export class ServerComponent {
     serverId: number = 10;
-    serverStatus: string = 'offline';
+    private serverStatus: string = 'offline';
+
+    getServerStatus(): string {
+        return this.serverStatus;
+    }
+
+    changeStatus() {
+        if(this.serverStatus === 'offline') {
+            this.serverStatus = 'online';
+        }else {
+            this.serverStatus = 'offline';
+        }
+    }
 }
