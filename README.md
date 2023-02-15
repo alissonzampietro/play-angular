@@ -1,7 +1,11 @@
-# Learning Angular
+# ✨ Play Angular
 
 
-## How does the application start up?
+## How start the application?
+
+```
+npm start
+```
 
 
 ## Styling
