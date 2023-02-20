@@ -13,7 +13,7 @@ npm start
 
 ## Directives
  - [Component](README/componentDirective.md)
- - [Component](README/directives.md)
+ - [Directives details](README/directives.md)
 
 ## Modules
  - [What's modules in Angular?](README/modules.md)
