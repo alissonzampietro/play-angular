@@ -13,10 +13,12 @@ npm start
 
 ## Directives
  - [Component](README/componentDirective.md)
+ - [Component](README/directives.md)
 
 ## Modules
  - [What's modules in Angular?](README/modules.md)
  - [FormModules](README/formsModule.md)
 
 ## Data Binding
-- [Two-Way Data Binding](README/twoWayDataBinding.md)
+- [String Interpolation, Data Binding, Two-Way Data Binding](README/dataBinding.md)
+- [Event Binding](README/dataBinding.md)
