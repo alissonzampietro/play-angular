@@ -1,15 +1,30 @@
+import { style } from "@angular/animations";
 import { Component } from "@angular/core";
 
 
 @Component({
     selector: 'app-server',
-    templateUrl: './server.component.html'
+    templateUrl: './server.component.html',
+    styles: [`
+    .serverStatus {
+        max-width: 200px;
+        height: auto;
+        text-align: center;
+        padding: 10px;
+        margin: 10px 0 0 0;
+        color: white;
+    }
+    `]
 })
 
 export class ServerComponent {
     serverId: number = 10;
     private serverStatus: string = 'offline';
-    buttonDescription: string = 'Turn on';
+    buttonDescription: string = 'Switch Server';
+
+    constructor() {
+        this.serverStatus = Math.random() > 0.5 ? 'online' : 'offline';
+    }
 
     getServerStatus(): string {
         return this.serverStatus;
@@ -18,10 +33,12 @@ export class ServerComponent {
     changeStatus() {
         if(this.serverStatus === 'offline') {
             this.serverStatus = 'online';
-            this.buttonDescription = 'Turn off'
-        }else {
-            this.serverStatus = 'offline';
-            this.buttonDescription = 'Turn on'
+            return;
         }
+        this.serverStatus = 'offline';
+    }
+
+    getColor() {
+        return this.serverStatus === 'online' ? 'green' : 'red';
     }
 }

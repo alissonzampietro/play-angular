@@ -1,4 +1,4 @@
-<p>{{ 'server' }} Server with ID {{ serverId }} is {{ getServerStatus() }}</p>
+<p [ngStyle]="{backgroundColor:getColor()}" class="serverStatus">{{ 'Server' }} with ID {{ serverId }} is {{ getServerStatus() }}</p>
 
 <button (click)="changeStatus()">{{buttonDescription}}</button>
 

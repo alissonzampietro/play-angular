@@ -21,4 +21,6 @@ The ```appTurnGreen``` is just the selector of the directive TurnGreenDirective.
 
 ## Builtin directives
 
- - ```*ngIf```: conditional directive, that only shows the element where it is inserted, if the condition is *true*. **star is use to tell to interpreter that it's a structure directive that changes the DOM**
+ - ```*ngIf```: conditional directive, that only shows the element where it is inserted, if the condition is *true*. **star is use to tell to interpreter that it's a structure directive that changes the DOM**. 
+    - There is a way where you can create a else in the condition, using the ng-template and placing a local referencing on this directive and put the *else* in the ngIf after the condition. Feel free to choose the reference name, but the rule is: it should start with #. You can see the example in the [TS file](../src/app/servers/servers.component.html)
+ - ```*ngStyle```:
