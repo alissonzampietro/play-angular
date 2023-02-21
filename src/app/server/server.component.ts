@@ -19,7 +19,7 @@ import { Component } from "@angular/core";
 
 export class ServerComponent {
     serverId: number = 10;
-    private serverStatus: string = 'offline';
+    serverStatus: string = 'offline';
     buttonDescription: string = 'Switch Server';
 
     constructor() {

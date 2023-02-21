@@ -1,5 +1,5 @@
 <p [ngStyle]="{backgroundColor:getColor()}" class="serverStatus">{{ 'Server' }} with ID {{ serverId }} is {{ getServerStatus() }}</p>
 
-<button (click)="changeStatus()" class="btn btn-primary" [ngClass]="getClass()">{{buttonDescription}}</button>
+<button (click)="changeStatus()" class="btn btn-primary" [ngClass]="{'btn-danger': serverStatus === 'online', 'btn-success': serverStatus === 'offline'}">{{buttonDescription}}</button>
 
 <!-- <div app-attribute-selector></div> -->
