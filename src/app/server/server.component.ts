@@ -41,4 +41,8 @@ export class ServerComponent {
     getColor() {
         return this.serverStatus === 'online' ? 'green' : 'red';
     }
+
+    getClass() {
+        return this.serverStatus === 'online' ? 'btn-danger' : 'btn-success';
+    }
 }
