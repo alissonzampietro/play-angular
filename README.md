@@ -24,5 +24,12 @@ npm start
  - [FormModules](README/formsModule.md)
 
 ## Data Binding
-- [String Interpolation, Data Binding, Two-Way Data Binding](README/dataBinding.md)
-- [Event Binding](README/dataBinding.md)
+- [String Interpolation, Data Binding, Two-Way Data Binding](README/dataBinding.md#string-interpolation)
+- [Event Binding](README/dataBinding.md#event-binding)
+
+
+## Components
+- [Cross Component Comunication (TODO)]()
+
+## Typescript
+ - [Creating models](README/typescript.md#creating-models)
