@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 import { ActivitiesComponent } from './activities.component';
 import { BindingValuesComponent } from './binding-values/binding-values.component';
 import { FormsModule } from '@angular/forms';
+import { BuiltinDirectiveComponent } from './builtin-directive/builtin-directive.component';
 
 
 
 @NgModule({
   declarations: [
     ActivitiesComponent,
-    BindingValuesComponent
+    BindingValuesComponent,
+    BuiltinDirectiveComponent
   ],
   exports: [
     ActivitiesComponent
