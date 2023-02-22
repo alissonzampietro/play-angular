@@ -1,6 +1,6 @@
 [<- Back to home](../README.md)
 
-# Component Directive
+# Component Decorator
 
 You can create as many components as you want and nest them inside each other.
 
