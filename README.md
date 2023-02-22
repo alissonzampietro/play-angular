@@ -9,11 +9,13 @@ npm start
 
 
 ## Styling
- - [Component](README/componentDirective.md)
+ - [Component](README/componentDecorator.md)
 
 ## Directives
- - [Component](README/componentDirective.md)
- - [Directives details](README/directives.md)
+ - [Built-in and Custom Directives](README/directives.md)
+
+## Decorators
+ - [Component](README/componentDecorator.md)
 
 ## Modules
  - [What's modules in Angular?](README/modules.md)

@@ -1,6 +1,6 @@
 # Directives
 
-Basically Directives are Instructions in the DOM. Although we've used directives with templates in the [example of components](./componentDirective.md), we can also use directives without them, for example:
+Basically Directives are Instructions in the DOM. Although we've used directives with templates in the [example of components](./componentDecorator.md), we can also use directives without them, for example:
 
 ```html
 <p appTurnGreen>Receives a green background!</p>
