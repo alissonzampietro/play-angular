@@ -1,5 +1,7 @@
 # ✨ Play Angular
 
+Hi! :grinning: Here is all my personal notes while learning Angular. Besides the examples we have a working application.
+
 
 ## How start the application?
 
