@@ -8,7 +8,7 @@ import { ServerElement } from 'src/app/shared/server-element.interface';
 })
 export class ServerElementComponent implements OnInit {
 
-  @Input() element: ServerElement;
+  @Input('srvElement') element: ServerElement;
 
   constructor() { }
 

@@ -1,5 +1,5 @@
 export interface ServerElement {
-    type: string;
+    type?: string;
     name: string;
     content: string;
 }

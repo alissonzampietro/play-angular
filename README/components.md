@@ -33,5 +33,7 @@ Above is the component typescript example, let's check how we would call it:
 
 If you want to check more examples, you can see the parent [typescrypt components](../src/app/examples/components/components.component.ts#L9-L11) and the [template component](../src/app/examples/components/components.component.html#L6-L8).
 
+## Sending data from component
+
 
 

@@ -1,10 +1,13 @@
 <div class="container components">
     <h2>this example is dealing with components</h2>
-    <app-cockpit></app-cockpit>
+    <app-cockpit 
+      (serverCreated)="onServerAdded($event)"
+      (blueprintCreated)="onBlueprintAdded($event)"
+    ></app-cockpit>
     <hr>
     <div class="row">
       <div class="col-xs-12">
-        <app-server-element *ngFor="let element of serverElements" [element]="element"></app-server-element>
+        <app-server-element *ngFor="let element of serverElements" [srvElement]="element"></app-server-element>
       </div>
     </div>
   </div>
