@@ -11,7 +11,11 @@ npm start
 
 
 ## Styling
- - [Component](README/componentDecorator.md)
+ - [Using CSS file](README/componentDecorator.md#styleUrls)
+ - [Using CSS in the local component](README/componentDecorator.md#styles)
+
+## Template
+ - [Accessing values through ViewChild](README/template.md#viewchild)
 
 ## Directives
  - [Built-in and Custom Directives](README/directives.md)
@@ -20,6 +24,7 @@ npm start
  - [Component](README/componentDecorator.md)
  - [Input](README/inputDecorator.md)
  - [Output](README/outputDecorator.md)
+ - [ViewChild](README/viewchildDecorator.md)
 
 ## Modules
  - [What's modules in Angular?](README/modules.md)

@@ -57,3 +57,6 @@ export class Component {
   }
 }
 ```
+
+## Using ViewChild
+Use similar aspects of the previous implementation, however, there's a slightly implementation difference in the Typescript component that you [check here](./viewchildDecorator.md).
