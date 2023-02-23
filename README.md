@@ -15,7 +15,6 @@ npm start
  - [Using CSS in the local component](README/componentDecorator.md#styles)
 
 ## Template
- - [Accessing values through ViewChild](README/template.md#viewchild)
 
 ## Directives
  - [Built-in and Custom Directives](README/directives.md)
@@ -31,8 +30,13 @@ npm start
  - [FormModules](README/formsModule.md)
 
 ## Data Binding
-- [String Interpolation, Data Binding, Two-Way Data Binding](README/dataBinding.md#string-interpolation)
+- [String Interpolation](README/dataBinding.md#string-interpolation)
+- [Property Binding](README/dataBinding.md#property-binding)
 - [Event Binding](README/dataBinding.md#event-binding)
+- [Passing and using data with Event Binding](README/dataBinding.md#passing-and-using-data-with-event-binding)
+- [Passing and using data with Two-Way Data Binding](README/dataBinding.md#passing-and-using-data-with-two-way-data-binding)
+- [Using Local References](README/dataBinding.md#using-local-references)
+- [Using ViewChild()](README/dataBinding.md#using-viewchild)
 
 
 ## Components
