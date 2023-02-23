@@ -1,4 +1,4 @@
-[<- Back to home](../README.md)
+[< Back to home](../README.md)
 # Input Decorator
 
 This decorator is used to let angular knows which properties of your class is available to be bindable for parents.

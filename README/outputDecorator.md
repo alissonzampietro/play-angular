@@ -1,4 +1,4 @@
-[<- Back to home](../README.md)
+[< Back to home](../README.md)
 # Output decorator
  
 That's the decorator that together with the EventEmitter, allows the child send data to parent. Let's see step by step how implement this using the real examples:
