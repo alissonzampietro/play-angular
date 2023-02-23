@@ -9,6 +9,10 @@ Hi! :grinning: Here is all my personal notes while learning Angular. Besides the
 npm start
 ```
 
+## Angular
+ - [Lifecycle: ngOnChanges()](README/angular.md#ngonchanges)
+ - [Lifecycle: ngOnInit()](README/angular.md#ngoninit)
+ - [Lifecycle: ngDoCheck()](README/angular.md#ngdocheck)
 
 ## Styling
  - [Using CSS file](README/componentDecorator.md#styleUrls)
