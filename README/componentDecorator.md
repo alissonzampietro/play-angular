@@ -7,11 +7,6 @@ You can create as many components as you want and nest them inside each other.
 
 ## How to create a component?
 
-
-
-
-
-
 ```typescript
 // app.component.ts file
 import { Component } from '@angular/core';
@@ -19,7 +14,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  styleUrls: ['./app.component.css'], 
   styles: `
     h1 {
       color: blue;

@@ -30,6 +30,7 @@ npm start
 
 ## Components
 - [Cross Component Comunication (TODO)]()
+- [Sending data to component](README/components.md#sending-data-to-component)
 
 ## Typescript
  - [Creating models](README/typescript.md#creating-models)

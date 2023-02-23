@@ -8,6 +8,9 @@ import { ExamplesComponent } from './examples.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { ComponentsComponent } from './components/components.component';
+import { CockpitComponent } from './components/cockpit/cockpit.component';
+import { ServerElementComponent } from './components/server-element/server-element.component';
 
 
 
@@ -17,13 +20,17 @@ import { FormsModule } from '@angular/forms';
     ServersComponent,
     ExamplesComponent,
     ClassSelectorsComponent,
-    AttributeSelectorsComponent
+    AttributeSelectorsComponent,
+    ComponentsComponent,
+    CockpitComponent,
+    ServerElementComponent
   ],
   exports: [
     ServerComponent,
     ServersComponent,
     ExamplesComponent,
-    ActivitiesComponent
+    ActivitiesComponent,
+    ComponentsComponent
   ],
   imports: [
     CommonModule,
