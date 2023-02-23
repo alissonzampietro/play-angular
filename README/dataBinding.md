@@ -32,3 +32,28 @@ $event (Dollar Sign Event): See the example in the [servers component file and o
 
 ## Passing and using data with Two-Way Data Binding
 See the example in the [servers component file and serverNameTwoWay property name](../src/app/examples/servers/servers.component.ts)
+
+## Using Local References
+Local reference is an alternative to NgModel when you just want to pass data in a One Way. You set the reference in the input on the template and after in the typescript component, you declare the property that you'll be receiving.
+
+```html
+<!-- set the #serverNameInput reference in the template file of the component-->
+<input 
+    type="text" 
+    class="form-control"
+    #serverNameInput
+>
+
+<button
+    (click)="onAddServer(serverNameInput)"
+>Add Server</button>
+```
+
+```typescript
+export class Component {
+  // declare the value that you're getting in the properties
+  onAddServer(input: HTMLInputElement) {
+    console.log(input.value)
+  }
+}
+```
