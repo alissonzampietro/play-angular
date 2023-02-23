@@ -15,6 +15,7 @@ npm start
  - [Using CSS in the local component](README/componentDecorator.md#styles)
 
 ## Template
+ - [Passing content inside directive](README/template.md#ng-template)
 
 ## Directives
  - [Built-in and Custom Directives](README/directives.md)
