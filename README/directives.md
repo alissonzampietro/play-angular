@@ -1,3 +1,4 @@
+[<- Back to home](../README.md)
 # Directives
 
 Basically Directives are Instructions in the DOM. Although we've used directives with templates in the [example of components](./componentDecorator.md), we can also use directives without them, for example:

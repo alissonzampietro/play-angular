@@ -8,7 +8,7 @@ import { ServerElement } from 'src/app/shared/server-element.interface';
 })
 export class CockpitComponent implements OnInit {
   @Output() serverCreated = new EventEmitter<ServerElement>();
-  @Output() blueprintCreated = new EventEmitter<ServerElement>();
+  @Output('createBlueprint') blueprintCreated = new EventEmitter<ServerElement>();
   newServerName = '';
   newServerContent = '';
 
@@ -19,7 +19,7 @@ export class CockpitComponent implements OnInit {
 
   onAddServer() {
     this.serverCreated.emit({
-      name: this.newServerName, 
+      name: this.newServerName,
       content: this.newServerContent
     });
   }

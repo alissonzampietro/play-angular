@@ -18,6 +18,8 @@ npm start
 
 ## Decorators
  - [Component](README/componentDecorator.md)
+ - [Input](README/inputDecorator.md)
+ - [Output](README/outputDecorator.md)
 
 ## Modules
  - [What's modules in Angular?](README/modules.md)
