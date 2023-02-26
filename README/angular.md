@@ -18,8 +18,11 @@ Calling during every change detection run
 ### ngAfterContentInit()
 Called after content (ng-content) has been projected into view
 
-### ngAfterContentChecjed()
+### ngAfterContentChecked()
 Called every time the projected content has been checked.
 
-### ngAfterContentChecjed()
-Called every time the projected content has been checked.
+### ngAfterViewinit()
+Called after the component's view (and child views) has been initialized
+
+### ngAfterViewChecked()
+Called every time the view (and child views) have been checked

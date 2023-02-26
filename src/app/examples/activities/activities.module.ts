@@ -4,6 +4,9 @@ import { ActivitiesComponent } from './activities.component';
 import { BindingValuesComponent } from './binding-values/binding-values.component';
 import { FormsModule } from '@angular/forms';
 import { BuiltinDirectiveComponent } from './builtin-directive/builtin-directive.component';
+import { GameControlComponent } from './game-control/game-control.component';
+import { OddComponent } from './odd/odd.component';
+import { EvenComponent } from './even/even.component';
 
 
 
@@ -11,7 +14,10 @@ import { BuiltinDirectiveComponent } from './builtin-directive/builtin-directive
   declarations: [
     ActivitiesComponent,
     BindingValuesComponent,
-    BuiltinDirectiveComponent
+    BuiltinDirectiveComponent,
+    GameControlComponent,
+    OddComponent,
+    EvenComponent
   ],
   exports: [
     ActivitiesComponent

@@ -1,0 +1,12 @@
+<div class="container">
+    <p>game-control works!</p>
+
+    <div class="row">
+        {{incrementingNumber}}
+    </div>
+
+    <div>
+        <button class="btn btn-success" type="button" (click)="onStartGame()" [disabled]="intervalReference">Start</button>
+        <button class="btn btn-danger" type="button" [disabled]="!intervalReference" (click)="onStopGame()">Stop</button>
+    </div>
+</div>
