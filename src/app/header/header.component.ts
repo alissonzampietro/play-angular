@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { Menus } from '../enum/menus';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+
+  public recipe = Menus.recipes;
+  public shoppingList = Menus.shoppingList;
+
+  @Output('openPage') currentPage = new EventEmitter<Menus>();
   collapsed = true;
+
+  public openPage(page: Menus) {
+    this.currentPage.emit(page);
+  }
+
+
 }

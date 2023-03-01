@@ -1,11 +1,11 @@
-<!-- <app-header></app-header>
+<app-header (openPage)="openPage($event)"></app-header>
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <app-recipe></app-recipe>
-            <app-shopping-list></app-shopping-list>
+            <app-recipe *ngIf="currentPage === menus.recipes"></app-recipe>
+            <app-shopping-list *ngIf="currentPage === menus.shoppingList"></app-shopping-list>
         </div>
     </div>
-</div> -->
+</div>
 
-<app-examples></app-examples>
+<!-- <app-examples></app-examples> -->
