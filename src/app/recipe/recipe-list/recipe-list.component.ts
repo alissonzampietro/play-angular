@@ -9,7 +9,8 @@ import { Recipe } from '../recipe.model';
 export class RecipeListComponent {
 
   public recipes: Recipe[] = [
-    new Recipe('Chocolate Cake', 'Simple chocolate cake', 'https://thestayathomechef.com/wp-content/uploads/2016/06/The-Most-Amazing-Chocolate-Cake-Thumbnail.jpg')
+    new Recipe('Chocolate Cake', 'Simple chocolate cake', 'https://thestayathomechef.com/wp-content/uploads/2016/06/The-Most-Amazing-Chocolate-Cake-Thumbnail.jpg'),
+    new Recipe('Chocolate Cake', 'Simple chocolate cake', 'https://thestayathomechef.com/wp-content/uploads/2016/06/The-Most-Amazing-Chocolate-Cake-Thumbnail.jpg'),
   ];
 
   constructor(){}
