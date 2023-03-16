@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Recipe } from './recipe.model';
 
 @Component({
     selector: 'app-recipe',
@@ -6,4 +7,11 @@ import { Component } from '@angular/core';
     styleUrls: []
 })
 
-export class RecipeComponent {}
+export class RecipeComponent {
+
+    public recipe: Recipe;
+    
+    selectRecipe(event: Recipe) {
+        this.recipe = event;
+    }
+}

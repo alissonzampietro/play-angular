@@ -1,4 +1,11 @@
-export class Recipe{
+
+export interface RecipeInterface {
+    name: string;
+    description: string;
+    imagePath: string;
+}
+
+export class Recipe implements RecipeInterface{
     public name: string;
     public description: string;
     public imagePath: string;
