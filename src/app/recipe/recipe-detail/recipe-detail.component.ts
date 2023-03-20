@@ -1,5 +1,5 @@
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
-import { RecipeInterface } from './../recipe.model';
+import { Recipe, RecipeInterface } from './../recipe.model';
 @Component({
   selector: 'app-recipe-detail',
   templateUrl: './recipe-detail.component.html',
@@ -7,7 +7,7 @@ import { RecipeInterface } from './../recipe.model';
 })
 export class RecipeDetailComponent implements OnChanges {
 
-  @Input() recipe: RecipeInterface;
+  @Input() public recipe: RecipeInterface;
 
   ngOnChanges({recipe}: SimpleChanges) {
     console.log(recipe)
