@@ -8,10 +8,5 @@ import { Recipe } from './recipe.model';
 })
 
 export class RecipeComponent {
-
     public recipe: Recipe;
-    
-    selectRecipe(event: Recipe) {
-        this.recipe = event;
-    }
 }
