@@ -9,7 +9,7 @@ import { Recipe } from '../../recipe.model';
 export class RecipeItemComponent {
   
   @Input() recipe: Recipe;
-  @Output() public recipeItem = new EventEmitter();
+  @Output() public recipeItem = new EventEmitter<Recipe>();
 
   constructor() {}
 
