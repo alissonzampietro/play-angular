@@ -41,3 +41,12 @@ The example above shows how [Structural directives](https://angular.io/guide/str
     - The first one is creating a method and this method returns the className that you want.
     - The second option is you use a JSON where the property key is the class that will be used and in the value, you put the condition that expects a boolean.
  - ```*ngFor```: Allows you to loop over a list of elements, as you can [see here](../src/app/examples/servers/servers.component.html).
+
+
+ ## Attribute Directives vs Structural Directives 
+
+ While attribute directives doesn't change the DOM structure, Structural Directive does. Let's use the ```*ngIf``` as example, when the condition is false, basically the HTML code is removed from the DOM.
+
+ ## Attribute directives
+
+One interesting features that Angular allows you to implement is the attribute directives. Basically, it allows you to attach custom behavior to the DOM throught properties. In our example, we set our directive [here](../src/app/examples/activities/basic-highlight/basic-highlight.directive.ts) and later we called it in the [component attribute-directive (just search the appHighLight attribute)](../src/app/examples/activities/attribute-directive/attribute-directive.component.html).

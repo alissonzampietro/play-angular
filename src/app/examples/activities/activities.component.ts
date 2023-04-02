@@ -2,11 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-activities',
-  template: `
-    <app-game-control (intervalEmitter)="count($event)"></app-game-control>
-    <app-odd *ngFor="let number of oddNumbers" [number]="number"></app-odd>
-    <app-even *ngFor="let number of evenNumbers" [number]="number"></app-even>
-  `
+  templateUrl: './activities.component.html' 
 })
 export class ActivitiesComponent {
 

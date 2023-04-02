@@ -1,5 +1,10 @@
 <hr>
 <h1>Activities</h1>
+<app-activity-attribute-directive></app-activity-attribute-directive>
 <app-binding-values></app-binding-values>
 <hr>
 <app-builtin-directive></app-builtin-directive>
+
+<app-game-control (intervalEmitter)="count($event)"></app-game-control>
+<app-odd *ngFor="let number of oddNumbers" [number]="number"></app-odd>
+<app-even *ngFor="let number of evenNumbers" [number]="number"></app-even>
