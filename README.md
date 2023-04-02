@@ -22,7 +22,8 @@ npm start
  - [Passing content inside directive](README/template.md#ng-template)
 
 ## Directives
- - [Built-in and Custom Directives](README/directives.md)
+ - [Built-in and Custom Directives](README/directives.md#built-in-directives)
+ - [Attribute Directives vs Structural Directives ](README/directives.md#attribute-directives-vs-structural-directives)
 
 ## Decorators
  - [Component](README/componentDecorator.md)
