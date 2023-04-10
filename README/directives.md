@@ -50,3 +50,7 @@ The example above shows how [Structural directives](https://angular.io/guide/str
  ## Attribute directives
 
 One interesting features that Angular allows you to implement is the attribute directives. Basically, it allows you to attach custom behavior to the DOM throught properties. In our example, we set our directive [here](../src/app/examples/activities/basic-highlight/basic-highlight.directive.ts) and later we called it in the [component attribute-directive (just search the appHighLight attribute)](../src/app/examples/activities/attribute-directive/attribute-directive.component.html).
+
+
+ ## Renderer2
+It's a implementation that allows you intercept the DOM and create modifications over it. Check our example [here](../src/app/examples/activities/better-highlight/better.highlight.directive.ts)
