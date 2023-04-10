@@ -9,6 +9,7 @@ import { OddComponent } from './odd/odd.component';
 import { EvenComponent } from './even/even.component';
 import { AttributeDirectiveComponent } from './attribute-directive/attribute-directive.component';
 import { BasicHighlightDirective } from './basic-highlight/basic-highlight.directive';
+import { BetterHighlightDirective } from './better-highlight/better.highlight.directive';
 
 
 
@@ -21,7 +22,8 @@ import { BasicHighlightDirective } from './basic-highlight/basic-highlight.direc
     GameControlComponent,
     OddComponent,
     EvenComponent,
-    AttributeDirectiveComponent
+    AttributeDirectiveComponent,
+    BetterHighlightDirective
   ],
   exports: [
     ActivitiesComponent
