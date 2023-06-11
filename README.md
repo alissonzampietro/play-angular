@@ -30,7 +30,8 @@ npm start
  - [Input](README/inputDecorator.md)
  - [Output](README/outputDecorator.md)
  - [ViewChild](README/viewchildDecorator.md)
- - [ViewChild](README/hostChild.md)
+ - [HostChild](README/hostChild.md)
+ - [HostBinding](README/hostBinding.md)
 
 ## Modules
  - [What's modules in Angular?](README/modules.md)
