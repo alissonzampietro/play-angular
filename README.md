@@ -24,6 +24,9 @@ npm start
 ## Directives
  - [Built-in and Custom Directives](README/directives.md#built-in-directives)
  - [Attribute Directives vs Structural Directives ](README/directives.md#attribute-directives-vs-structural-directives)
+ - [Attribute Directives](README/directives.md#attribute-directives)
+ - [Directive Properties](README/directives.md#directive-properties)
+ - [Create my own structural directive ](README/directives.md#create-my-own-structural-directive)
 
 ## Decorators
  - [Component](README/componentDecorator.md)
@@ -53,3 +56,9 @@ npm start
 
 ## Typescript
  - [Creating models](README/typescript.md#creating-models)
+
+
+# title converter
+ ```javascript
+''.split(' ').map(item => item.toLowerCase()).join('-')
+ ```

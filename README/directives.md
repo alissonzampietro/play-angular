@@ -52,12 +52,21 @@ The example above shows how [Structural directives](https://angular.io/guide/str
 One interesting features that Angular allows you to implement is the attribute directives. Basically, it allows you to attach custom behavior to the DOM throught properties. In our example, we set our directive [here](../src/app/examples/activities/basic-highlight/basic-highlight.directive.ts) and later we called it in the [component attribute-directive (just search the appHighLight attribute)](../src/app/examples/activities/attribute-directive/attribute-directive.component.html).
 
  ## Directive Properties
- [component attribute-directive (just search the appHighLight attribute)](../src/app/examples/activities/attribute-directive/attribute-directive.component.html).
 
  Directive properties in Angular enable communication and data exchange between components. Using @Input and @Output decorators, they pass data from parent to child components and allow child components to emit events to the parent component. Directive properties enhance code modularity and enable dynamic rendering and interaction in Angular applications.
 
-One interesting features that Angular allows you to implement is the attribute directives. Basically, it allows you to attach custom behavior to the DOM throught properties. In our example, we set our directive [here](../src/app/examples/activities/basic-highlight/basic-highlight.directive.ts) and later we called it in the [component attribute-directive (just search the appHighLight attribute)](../src/app/examples/activities/attribute-directive/attribute-directive.component.html).
+ ## Create my own structural directive
 
+ [Structural directive](../src/app/examples/activities/structural-directive/unless.directive.ts) are applied by using the star(*) as prefix, such as *ngIf. Actually, angular converts in a ng-template tag and set is as a regular property bind [ngIf]. You can see its implementation [here](../src/app/examples/activities/structural-directive/unless.directive.ts) and how it will be used in the template [here: you can see the example *appUnless="showOdd"](../src/app/examples/activities/attribute-directive/attribute-directive.component.html). A bit of explatation what actually it's doing:
+
+  - The **@Directive** decorator defines the directive with the selector **[appUnless]**. This means the directive can be applied to elements using the attribute appUnless in the Angular template.
+  - The **@Input('appUnless')** decorator sets up an input property named **"appUnless"**. This property allows the directive to receive a boolean value as input, specified by the alias "appUnless".
+  - Inside the setter function for the unless property, the provided condition is evaluated. If the condition is false (i.e., !condition), the directive's logic is executed.
+  - When the condition is not met, the directive calls **createEmbeddedView(this.templateRef)** on the **ViewContainerRef** instance (vcRef). This method creates an embedded view using the associated **TemplateRef** instance (templateRef), which represents the template content to be rendered. The view is then inserted into the view container, resulting in the rendering of the template content.
+  - Conversely, if the condition is true (i.e., the condition is not met), the directive calls **clear()** on the **ViewContainerRef** instance. This method clears any previously created views from the view container, effectively removing the rendered template content.
+  - The constructor of the directive receives two dependencies: **TemplateRef<any>** and **ViewContainerRef**. These dependencies are used to access and manipulate the template and view container of the element where the directive is applied.
+
+In summary, the **"UnlessDirective"** provides a way to conditionally render or clear template content based on the value of the provided boolean condition. If the condition is false, the associated template is rendered, and if the condition is true, the template is cleared.
 
  ## Renderer2
 It's a implementation that allows you intercept the DOM and create modifications over it. Check our example [here](../src/app/examples/activities/better-highlight/better.highlight.directive.ts)

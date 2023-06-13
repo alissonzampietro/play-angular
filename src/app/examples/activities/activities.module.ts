@@ -10,6 +10,7 @@ import { EvenComponent } from './even/even.component';
 import { AttributeDirectiveComponent } from './attribute-directive/attribute-directive.component';
 import { BasicHighlightDirective } from './basic-highlight/basic-highlight.directive';
 import { BetterHighlightDirective } from './better-highlight/better.highlight.directive';
+import { UnlessDirective } from './structural-directive/unless.directive';
 
 
 
@@ -23,7 +24,8 @@ import { BetterHighlightDirective } from './better-highlight/better.highlight.di
     OddComponent,
     EvenComponent,
     AttributeDirectiveComponent,
-    BetterHighlightDirective
+    BetterHighlightDirective,
+    UnlessDirective
   ],
   exports: [
     ActivitiesComponent

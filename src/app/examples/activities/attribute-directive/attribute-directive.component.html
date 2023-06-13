@@ -8,7 +8,7 @@
                 <div *ngIf="showOdd">
                     <li class="list-group-item" appHighLight *ngFor="let odd of oddNumbers">{{odd}}</li>
                 </div>
-                <div *ngIf="!showOdd">
+                <div *appUnless="showOdd">
                     <li 
                         class="list-group-item" 
                         appBetterHighlight="purple"
