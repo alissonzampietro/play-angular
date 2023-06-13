@@ -9,7 +9,12 @@
                     <li class="list-group-item" appHighLight *ngFor="let odd of oddNumbers">{{odd}}</li>
                 </div>
                 <div *ngIf="!showOdd">
-                    <li class="list-group-item" appBetterHighlight *ngFor="let even of evenNumbers">{{even}}</li>
+                    <li 
+                        class="list-group-item" 
+                        appBetterHighlight="purple"
+                        defaultColor="pink"
+                        *ngFor="let even of evenNumbers"
+                    >{{even}}</li>
                 </div>
             </ul>
         </div>

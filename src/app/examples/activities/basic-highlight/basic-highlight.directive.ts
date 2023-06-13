@@ -1,4 +1,4 @@
-import { Directive, ElementRef, HostBinding, HostListener, OnInit, Renderer2 } from "@angular/core";
+import { Directive, ElementRef, HostBinding, HostListener, Input, OnInit, Renderer2 } from "@angular/core";
 
 @Directive({
     selector: '[appHighLight]'
@@ -6,7 +6,6 @@ import { Directive, ElementRef, HostBinding, HostListener, OnInit, Renderer2 } f
 
 export class BasicHighlightDirective implements OnInit {
     constructor(private elementRef: ElementRef, private render: Renderer2) {}
-
     @HostBinding('style.color') textColor: string;
 
     ngOnInit(): void {

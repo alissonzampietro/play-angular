@@ -1,8 +1,6 @@
 [< Back to home](../README.md)
 # Host Binding
 
-Sure! Here's the equivalent markdown version of the explanation:
-
 `@HostBinding` is a decorator in Angular that allows you to bind a class property to a host element property or attribute. 
 
 When you apply `@HostBinding` to a property in a directive or component class, it lets you dynamically set the value of a host element property or attribute based on the value of that property. This means you can control the behavior and appearance of the host element using the property value.
